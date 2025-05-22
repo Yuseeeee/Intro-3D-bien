@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1272613931142222186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003093586263363583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf4a0a7c12416345b540f727dd50cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2368541041443431932
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,8 +22,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7184074870375392016}
   - component: {fileID: 2735524004737141942}
+  - component: {fileID: 3167468430112688619}
+  - component: {fileID: 54483364865687906}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Caja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,6 +59,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3167468430112688619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2368541041443431932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf4a0a7c12416345b540f727dd50cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &54483364865687906
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2368541041443431932}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1003093586263329119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102,6 +144,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1955f07689be6b145a93350bcb39c23f, type: 3}
+--- !u!1 &1003093586263363583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 1955f07689be6b145a93350bcb39c23f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1003093586263329119}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1003093586263462879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1955f07689be6b145a93350bcb39c23f,
