@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7664007637896335280}
   - component: {fileID: 54580336046345482}
+  - component: {fileID: 114901754912486140}
+  - component: {fileID: 114163661187346616}
   m_Layer: 0
   m_Name: Barril
   m_TagString: Untagged
@@ -48,6 +50,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114901754912486140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117945620458519492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf4a0a7c12416345b540f727dd50cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  mercaderiaScript: {fileID: 0}
+--- !u!114 &114163661187346616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117945620458519492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b479b8269a219c44b1a2010a82dde16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePoints: 10
 --- !u!64 &223451214120610850
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -74,6 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf4a0a7c12416345b540f727dd50cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  mercaderiaScript: {fileID: 0}
 --- !u!1001 &8355436026255427571
 PrefabInstance:
   m_ObjectHideFlags: 0
