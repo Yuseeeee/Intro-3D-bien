@@ -1,28 +1,52 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
 
-public class InteractionArea : MonoBehaviour
-
-{
-    public GameObject UIInteractionMessage
-
-    // Start is called before the first frame update
-    void Start()
+    public class InteractionArea : MonoBehaviour
     {
-        UIInteractionMessage setActive(false)
+        public GameObject UIInteractionMessage;
+        public bool canInteract;
+        public MercaderiaScript mercaderia;
+        private void Start()
+        {
+            UIInteractionMessage.SetActive(false);
+        }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (canInteract)
+                {
+                    Destroy(mercaderia.gameObject);
+                    EndInteraction();
+                }
+            }
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            Debug.Log(other.gameObject.name);
+            mercaderia = other.GetComponent<MercaderiaScript>();
+            if (mercaderia)
+            {
+                UIInteractionMessage.SetActive(true);
+                canInteract = true;
+            }
+
+        }
+
+        void OnTriggerExit(Collider other)
+        {
+            EndInteraction();
+
+        }
+
+        void EndInteraction()
+        {
+            mercaderia = null;
+            canInteract = false;
+            UIInteractionMessage.SetActive(false);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-}
-
-Void Start
-{
-}
-
 
