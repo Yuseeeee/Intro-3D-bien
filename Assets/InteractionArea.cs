@@ -7,12 +7,12 @@
         public GameObject UIInteractionMessage;
         public bool canInteract;
         public MercaderiaScript mercaderia;
-        private void Start()
+         void Start()
         {
             UIInteractionMessage.SetActive(false);
         }
 
-        private void Update()
+         void Update()
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
