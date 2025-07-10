@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &7614712349545468142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218076489763476287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42776453, y: 4.2739472, z: 0.42287946}
+  m_Center: {x: -2.192628, y: -0.65634567, z: -0.0035614446}
 --- !u!1 &8484406423826106164
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,6 +22,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1988906655823999185}
+  - component: {fileID: 64572957501736206}
   m_Layer: 0
   m_Name: Viga
   m_TagString: Untagged
@@ -31,6 +45,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &64572957501736206
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8484406423826106164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1001 &218076489763444127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88,6 +116,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccd2a6af5abbfad4799c581a0ec45e4e, type: 3}
+--- !u!1 &218076489763476287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: ccd2a6af5abbfad4799c581a0ec45e4e,
+    type: 3}
+  m_PrefabInstance: {fileID: 218076489763444127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &218076489763049247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ccd2a6af5abbfad4799c581a0ec45e4e,

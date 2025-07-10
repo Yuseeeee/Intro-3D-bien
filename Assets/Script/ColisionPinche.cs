@@ -12,7 +12,7 @@ public class ColisionPinche : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log("Contacto");
+        Debug.Log("Contacto con " + col.gameObject);
         if (col.gameObject.name == "Player")
 
         {

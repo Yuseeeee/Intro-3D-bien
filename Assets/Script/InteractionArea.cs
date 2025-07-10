@@ -7,6 +7,8 @@
         public GameObject UIInteractionMessage;
         public bool canInteract;
         public MercaderiaScript mercaderia;
+        public scoreManager scoreManager;
+        public int points;
          void Start()
         {
             UIInteractionMessage.SetActive(false);
@@ -19,6 +21,7 @@
                 if (canInteract)
                 {
                     Destroy(mercaderia.gameObject);
+                scoreManager.AddScore(points);
                     EndInteraction();
                 }
             }
